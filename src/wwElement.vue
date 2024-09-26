@@ -8,7 +8,7 @@
         : this.open
     "
   >
-    <wwLayout path="slot" v-bind="$attrs" :class="styleSettings"></wwLayout>
+    <wwLayout path="slot" v-bind="$attrs"></wwLayout>
   </Teleport>
 </template>
 
@@ -21,10 +21,7 @@ export default {
     content: { type: Object, required: true },
     wwFrontState: { type: Object, required: true },
     wwEditorState: { type: Object, required: true },
-    type: { type: String, required: true },
-    styleSettings: { type: Array, required: false },
     teleport: { type: Boolean, required: true },
-    escapeCloses: { type: Boolean, required: true },
     open: { type: Boolean, required: true },
   },
   data() {
