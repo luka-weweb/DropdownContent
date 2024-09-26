@@ -110,6 +110,33 @@ export default {
         tooltip: "A string that defines size of offset in px or %",
       },
     },
+    avoidCollision: {
+      label: {
+        en: "Avoid collision",
+      },
+      type: "OnOff",
+      bindable: true,
+      defaultValue: false,
+    },
+    collisionOffset: {
+      type: "Length",
+      label: {
+        en: "Collision offset",
+      },
+      bindable: true,
+      options: {
+        unitChoices: [
+          { value: "px", label: "px", min: 1, max: 1000 },
+          { value: "%", label: "%", min: 1, max: 100 },
+        ],
+        noRange: true,
+        useVar: true,
+      },
+      bindingValidation: {
+        type: "string",
+        tooltip: "A string that defines size of offset in px or %",
+      },
+    },
     slot: {
       hidden: true,
       defaultValue: [],
