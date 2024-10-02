@@ -1,5 +1,8 @@
 <template>
-  <wwLayout path="slot" />
+  <div>
+    <wwLayout path="slot" />
+    {{ "content" }}
+  </div>
 </template>
 
 <script>
