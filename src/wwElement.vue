@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <wwLayout path="slot" />
-  </div>
+  <wwLayout path="slot" />
 </template>
 
 <script>
