@@ -1,7 +1,6 @@
 <template>
   <div>
     <wwLayout path="slot" />
-    {{ "content" }}
   </div>
 </template>
 
